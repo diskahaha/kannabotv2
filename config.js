@@ -44,8 +44,8 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
-global.sig = 'https://www.instagram.com/F'
-global.sgh = 'https://github.com/F'
+global.sig = 'https://www.instagram.com/𝕭𝖔𝖙'
+global.sgh = 'https://github.com/𝕭𝖔𝖙'
 global.sgc = 'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'
 global.sdc = " "
 global.snh = 'https://nhentai.net/g/365296/'
@@ -59,14 +59,16 @@ global.ppulsa2 = '082114579635'
 global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6282114579641'
+global.nomorbot = '6282114579635'
 global.nomorown = '6282114579635'
-global.namebot = '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
+global.namebot = '𝕭𝖔𝖙 ∅༢࿔ྀ'
 global.nameown = '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 
 
 /*============== STAFF ==============*/
 global.owner = [
+  ['6282114579635'],
+  ['6282114579635'],
   ['6282114579635'],
   ['6282114579635', '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ', true]
   // [number, dia creator/owner?, dia developer?]
@@ -118,7 +120,7 @@ global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘𝕭𝖔𝖙 • [A]ndii ∅༢�
 global.wm3 = '⫹⫺ 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ'
+global.titlebot = '🧋 ┊ 𝕭𝖔𝖙 ∅༢࿔ྀ '
 global.author = global.wm
 
 
@@ -155,7 +157,7 @@ global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━━━═┅═❏ *▰▰▰▱▱▱▱▱▱▱* ❏═┅═━━━━━┅'
+global.dashmenu = '┅━━━━━═┅═❏ *DASHBOARD* ❏═┅═━━━━━┅'
 global.cmenut = '❏––––––『'                       //top
 global.cmenuh = '』––––––'                        //header
 global.cmenub = '┊✦ '                            //body
@@ -171,7 +173,7 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '.'
+global.stickpack = '🧋'
 global.stickauth = `𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ`
 
 global.multiplier = 38 // The higher, The harder levelup
