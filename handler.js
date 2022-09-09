@@ -692,7 +692,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                        //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
+                        //this.sendFile(id, pp, text, null, false, { mentions: [user] })
     this.sendHydrated(id, text, wm + '\n\n' + botdate, sgc, (action == 'add' ? '💌 WELCOME' : '🐾 BYE'), user.split`@`[0],
       [(action == 'add' ? '\n\nYAELAH BEBAN GROUP NAMBAH 1 :(' : '\n\nBYE BEBAN! :)'), '...'],
       [null, null]
