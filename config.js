@@ -44,16 +44,16 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
-global.sig = '-'
-global.sgh = '-'
-global.sgc = '-'
+global.sig = 'https://www.instagram.com/F'
+global.sgh = 'https://github.com/F'
+global.sgc = 'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'
 global.sdc = " "
-global.snh = '-'
+global.snh = 'https://nhentai.net/g/365296/'
 
 /*============== PAYMENT ==============*/
-global.pdana = '-'
-global.povo = '-'
-global.pgopay = '-'
+global.pdana = '082114579635'
+global.povo = '082114579635'
+global.pgopay = '082114579635'
 global.ppulsa = '082114579635'
 global.ppulsa2 = '082114579635'
 global.psaweria = '-'
@@ -155,7 +155,7 @@ global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━━━═┅═❏ *DASHBOARD* ❏═┅═━━━━━┅'
+global.dashmenu = '┅━━━━━═┅═❏ *▰▰▰▱▱▱▱▱▱▱* ❏═┅═━━━━━┅'
 global.cmenut = '❏––––––『'                       //top
 global.cmenuh = '』––––––'                        //header
 global.cmenub = '┊✦ '                            //body
