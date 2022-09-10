@@ -312,7 +312,7 @@ export async function handler(chatUpdate) {
                 if (!('sticker' in chat))
                     chat.sticker = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = true
+                    chat.viewonce = false
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!('simi' in chat))
@@ -335,8 +335,8 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: false,
                     sticker: false,
-                    viewonce: true,
-                    antiToxic: true,
+                    viewonce: false,
+                    antiToxic: false,
                     simi: false,
                     expired: 0,
                     nsfw: false,
@@ -347,13 +347,13 @@ export async function handler(chatUpdate) {
             if (settings) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = true
-                if (!('restrict' in settings)) settings.restrict = true
+                if (!('restrict' in settings)) settings.restrict = false
                 if (!('autorestart' in settings)) settings.autorestart = false
                 if (!('restartDB' in settings)) settings.restartDB = 0
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: true,
-                restrict: true,
+                restrict: false,
                 autorestart: false,
                 restartDB: 0
             }
@@ -687,13 +687,13 @@ export async function participantsUpdate({ id, participants, action }) {
                 for (let user of participants) {
                     let pp = './thumbnail.jpg'
                     try {
-                        pp = await this.profilePictureUrl(user, 'image')
+                        profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                        //this.sendFile(id, text, null, false, { mentions: [user] })
-    this.sendHydrated(id, text, wm + '\n\n' + botdate, sgc, (action == 'add' ? '💌 WELCOME' : '🐾 BYE'), user.split`@`[0], '🌹 USER', [
+                        //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
+    this.sendHydrated(id, text, wm + '\n\n' + botdate, pp, sgc, (action == 'add' ? '💌 WELCOME' : '🐾 BYE'), user.split`@`[0], '🌹 USER', [
       ['ᴍᴇɴᴜ', '/menu'],
       [(action == 'add' ? '\n\nYAELAH BEBAN GROUP NAMBAH 1 :(' : '\n\nBYE BEBAN! :)'), '...'],
       [null, null]
